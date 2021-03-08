@@ -1,0 +1,9 @@
+<div>
+	<br/><button><%= link_to "create new letter",new_letter_path %></button>button><br/>
+
+	<% @letters.each do |letter| %>
+	<%= link_to letter.name,letter_path(letter) %>
+	<button><%= link_to "Edit",edit_path(letter) %></button>
+	<button><%= link_to 'Delete',letter, method: :delete,data: {confirm: 'Are you sure?'} %></button><br/>
+</div>
+<% end %>

@@ -1,0 +1,19 @@
+<h1>Form</h1>
+
+<p>
+	<%= form_with model: @letter do |f| %>
+<p>
+	<%= f.label :Name %>
+	<%= f.text_field :name %>
+</p>
+
+<p>
+	<%= f.label :Description %>
+	<%= f.text_field :description %>
+</p>
+
+<P>
+	<%= f.submit %>
+</P>
+<%end%>
+</p>
